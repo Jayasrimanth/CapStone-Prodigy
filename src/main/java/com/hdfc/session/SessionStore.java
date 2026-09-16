@@ -1,5 +1,11 @@
 package com.hdfc.session;
 
-public class SessionStore {
+public interface SessionStore {
+	
+	public void add(String token);
 
+	public boolean exists(String token);
+
+	public void remove(String token);
+	
 }
